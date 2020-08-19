@@ -219,10 +219,10 @@ module.exports = function (RED) {
 
     let node = this;
 
-    const powerAck = config.powerAck != "false";
-    const colorAck = config.colorAck != "false";
-    const patternAck = config.patternAck != "false";
-    const customPatternAck = config.customPatternAck != "false";
+    const powerAck = this.server.powerAck != "false";
+    const colorAck = this.server.colorAck != "false";
+    const patternAck = this.server.patternAck != "false";
+    const customPatternAck = this.server.customPatternAck != "false";
 
     let light = new MagicHomeControl(host, {
       ack: {

@@ -10,18 +10,6 @@
         value: "",
         type: "MagicHome-config",
       },
-      powerAck: {
-        value: "true",
-      },
-      colorAck: {
-        value: "true",
-      },
-      patternAck: {
-        value: "true",
-      },
-      customPatternAck: {
-        value: "true",
-      },
     },
     inputs: 1,
     outputs: 1,
@@ -40,22 +28,6 @@
   <div class="form-row">
       <label for="node-input-server"><i class="icon-tag"></i> Config</label>
       <input type="text" id="node-input-server">
-  </div>
-  <div class="form-row">
-      <label for="node-input-powerAck"><i class="icon-tag"></i> Power Ack</label>
-      <input type="text" id="node-input-powerAck">
-  </div>
-  <div class="form-row">
-      <label for="node-input-colorAck"><i class="icon-tag"></i> Color Ack</label>
-      <input type="text" id="node-input-colorAck">
-  </div>
-  <div class="form-row">
-      <label for="node-input-patternAck"><i class="icon-tag"></i> Pattern Ack</label>
-      <input type="text" id="node-input-patternAck">
-  </div>
-  <div class="form-row">
-      <label for="node-input-customPatternAck"><i class="icon-tag"></i> Custom Pattern Ack</label>
-      <input type="text" id="node-input-customPatternAck">
   </div>
 </script>
 
@@ -101,6 +73,18 @@
         required: true,
         validate: RED.validators.number(),
       },
+      powerAck: {
+        value: "true",
+      },
+      colorAck: {
+        value: "true",
+      },
+      patternAck: {
+        value: "true",
+      },
+      customPatternAck: {
+        value: "true",
+      },
     },
     label: function () {
       if (this.name !== "") {
@@ -120,6 +104,22 @@
   <div class="form-row">
       <label for="node-config-input-host"><i class="icon-bookmark"></i> Host/IP</label>
       <input type="text" id="node-config-input-host" placeholder="0.0.0.0">
+  </div>
+  <div class="form-row">
+      <label for="node-input-powerAck"><i class="icon-tag"></i> Power Ack</label>
+      <input type="text" id="node-input-powerAck">
+  </div>
+  <div class="form-row">
+      <label for="node-input-colorAck"><i class="icon-tag"></i> Color Ack</label>
+      <input type="text" id="node-input-colorAck">
+  </div>
+  <div class="form-row">
+      <label for="node-input-patternAck"><i class="icon-tag"></i> Pattern Ack</label>
+      <input type="text" id="node-input-patternAck">
+  </div>
+  <div class="form-row">
+      <label for="node-input-customPatternAck"><i class="icon-tag"></i> Custom Pattern Ack</label>
+      <input type="text" id="node-input-customPatternAck">
   </div>
   <!-- <div class="form-row">
       <label for="node-config-input-interval"><i class="icon-bookmark"></i> Query state interval</label>
