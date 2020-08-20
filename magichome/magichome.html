@@ -98,28 +98,40 @@
 
 <script type="text/x-red" data-template-name="MagicHome-config">
   <div class="form-row">
-      <label for="node-config-input-name"><i class="icon-bookmark"></i> Name</label>
-      <input type="text" id="node-config-input-name">
+        <label for="node-config-input-name"><i class="icon-bookmark"></i> Name</label>
+        <input type="text" id="node-config-input-name">
   </div>
   <div class="form-row">
-      <label for="node-config-input-host"><i class="icon-bookmark"></i> Host/IP</label>
-      <input type="text" id="node-config-input-host" placeholder="0.0.0.0">
+        <label for="node-config-input-host"><i class="icon-bookmark"></i> Host/IP</label>
+        <input type="text" id="node-config-input-host" placeholder="0.0.0.0">
   </div>
   <div class="form-row">
-      <label for="node-config-input-powerAck"><i class="icon-tag"></i> Power Ack</label>
-      <input type="text" id="node-config-input-powerAck">
+        <label for="node-config-input-powerAck">Acks</label>
+        <label for='node-config-input-powerAck' style='width:70%'>
+            <input type="checkbox" id="node-config-input-powerAck" style='width:auto;vertical-align:top;'>
+            <span>Power</span>
+        </label>
   </div>
   <div class="form-row">
-      <label for="node-config-input-colorAck"><i class="icon-tag"></i> Color Ack</label>
-      <input type="text" id="node-config-input-colorAck">
+        <label for="node-config-input-colorAck"></label>
+        <label for='node-config-input-colorAck' style='width:70%'>
+            <input type="checkbox" id="node-config-input-colorAck" style='width:auto;vertical-align:top;'>
+            <span>Color</span>
+        </label>
   </div>
   <div class="form-row">
-      <label for="node-config-input-patternAck"><i class="icon-tag"></i> Pattern Ack</label>
-      <input type="text" id="node-config-input-patternAck">
+        <label for="node-config-input-patternAck"></label>
+        <label for='node-config-input-patternAck' style='width:70%'>
+            <input type="checkbox" id="node-config-input-patternAck" style='width:auto;vertical-align:top;'>
+            <span>Pattern</span>
+        </label>
   </div>
   <div class="form-row">
-      <label for="node-config-input-customPatternAck"><i class="icon-tag"></i> Custom Pattern Ack</label>
-      <input type="text" id="node-config-input-customPatternAck">
+        <label for="node-config-input-customPatternAck"></label>
+        <label for='node-config-input-customPatternAck' style='width:70%'>
+            <input type="checkbox" id="node-config-input-customPatternAck" style='width:auto;vertical-align:top;'>
+            <span>Custom Pattern</span>
+        </label>
   </div>
   <!-- <div class="form-row">
       <label for="node-config-input-interval"><i class="icon-bookmark"></i> Query state interval</label>
